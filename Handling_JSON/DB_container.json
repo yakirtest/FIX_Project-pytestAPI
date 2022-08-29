@@ -1,0 +1,47 @@
+{
+  "Pet_Store":
+  {
+    "Api_Base": {"url": "http://localhost:8080/api/v3","header": {"accept": "application/json"}},
+    "Pet_Api":{
+      "Turtle":{"id": 1000, "name": "turtle1", "category": {"id": 4567, "name": "turtle"}, "photoUrls": ["url1", "url2"],"tags": [{"id": 1, "name": "tag3"}, {"id": 2, "name": "tag4"}], "status": "available"},
+      "Rabbit":{"id": 111, "name": "Rabbit 1", "category": {"id": 4567, "name": "Rabbits"}, "photoUrls": ["url1", "url2"],"tags": [{"id": 1, "name": "tag3"}, {"id": 2, "name": "tag4"}], "status": "available"},
+        "put_updata_pet":{"photoUrls": ["www.Urls333.co.li","www.Urls444.co.li","www.Urls555.co.li"]},
+        "Status":{"available": "available","pending": "pending","sold": "sold"},
+        "get_pet_by_tags": {"tags":["tag2"]},
+        "post_update_name_status_pet": {"id":2, "name": "dog123", "status": "available"},
+        "delete_pet": 10,
+        "post_uploadImage_pet":{"photoUrls": "photoUrls","path": "C:/Git_sela/FIX_Project-pytestAPI/Petstore_swaggerAPI/PetStoreAPI/petAPI/OIP.jpg","userid":2 }},
+    "Pet_storeApi":{
+      "order": {"id": 5, "petId": 4567, "quantity": 6, "shipDate": "2022-08-06T11:28:12.100+00:00", "status": "approved","complete": "True"},
+      "delete_orderid": 1},
+    "User_Api":{
+      "newUser":{"id": 1000, "username": "yp11", "firstName": "yakir", "lastName": "pan", "email": "yp@email.com", "password": "202020", "phone": "052-64646464", "userStatus": 2},
+      "listUsers":[
+      {"id": 30, "username": "theUser30", "firstName": "John30", "lastName": "James30", "email": "john30@email.com", "password": "303030", "phone": "303030", "userStatus": 1},
+      {"id": 40, "username": "theUser40", "firstName": "John40", "lastName": "James40", "email": "john40@email.com", "password": "404040", "phone": "404040", "userStatus": 1},
+      {"id": 50, "username": "theUser50", "firstName": "John50", "lastName": "James50", "email": "john50@email.com", "password": "505050", "phone": "505050", "userStatus": 1}],
+    "user_name_password": {"username": "yp11","password": "202020"},
+      "put_updata_user": {"firstName":"Yakir11" ,"lastName": "Pan11"},
+      "delete_user":{"username": "fgdgdgd"}
+
+
+    }
+
+  },
+
+
+  "Book_StoreApi":
+  {
+    "Api_Base": {"url": "https://bookstore.toolsqa.com","header": {"accept": "application/json"}},
+    "AccontAPI": {
+      "user" : {"userName": "yp11", "password": "Yy@123456"},
+      "user_id":  {"userID": "fc9139b1-792e-46d8-8cdb-2c7f257d95ee", "username": "yp11", "books": []},
+      "newuser" : {"userName": "test", "password": "Test@123"}},
+    "Store_Api": {
+      "user" : {"userName": "yp11", "password": "Yy@123456"},
+      "listbook": {"userId": "7bde7ad9-812f-4c66-a969-fab15a5776b4", "collectionOfIsbns": [{"isbn": "9781449325862"}, {"isbn": "9781449337711"}]},
+      "get_book": {"isbn": "9781449325862"},
+      "string_object_id&isbn":{"userId": "7bde7ad9-812f-4c66-a969-fab15a5776b4", "isbn": "9781449325862"}}
+
+  }
+}
